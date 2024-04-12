@@ -1,0 +1,84 @@
+<view class="homePage" id="homePage" style="overflow: {{isScroll?'scroll':'hidden'}};">
+  <view class="bg"></view>
+  <view class="title"></view>
+  <view class="titleimg"></view>
+  <view class="rule" bind:tap="openModal" data-modalname="showRule"></view>
+  <view class="prize" bind:tap="click_prize"></view>
+  <text class="actTime">活动时间：{{activityTime}}</text>
+  <view class="box1">
+    <view class="box1title"></view>
+    <view class="box1bg"></view>
+    <view class="camera" bind:tap="click_camera"></view>
+    <view class="doinput" bind:tap="click_input"></view>
+    <view class="inputArea" bind:tap="click_input">
+      <!-- <input wx:for="{{maList}}" wx:key="input" id="input{{ index }}" class="inputItem" maxlength="1" type="text" value="{{item}}" bindinput="bindKeyInput" focus="{{inputID==index?true:false}}" /> -->
+      <input wx:if="{{!showhechengAni&& !showhechengAni&&!!!showNotice&&!showRule&&!!!dividePop&&!!!cardPrizeInfo&&!!!getMoneyPrizePop&&!!!sendCardConfirmInfo&&!showNewGuide&&!showPhotoGuide&&!showTakePhoto&&!!!getcardandquanInfo}}" class="inputbox" maxlength="9" type="text" value="{{inputInfo}}" bindinput="bindKeyInput" focus="{{inputID<9?true:false}}" bindblur="bindblur" style="padding-left: {{paddingleft}}rpx;" confirm-type="next" />
+      <text wx:for="{{maList}}" wx:key="input" id="input{{ index }}" class="inputItem" >{{item}}</text>
+    </view>
+
+  </view>
+  <view class="box2">
+    <view class="box2title"></view>
+    <view class="box2banner" bind:tap="toCarveupPage"></view>
+    <view class="box2lab"></view>
+    <text class="box2Info"><text class="changColor">{{guafenNum}}人</text>已获得瓜分资格</text>
+  </view>
+  <view class="cardList" id="cardList">
+    <swiper indicator-dots="{{false}}" autoplay="{{false}}" circular="{{true}}" style="height: 433rpx;" display-multiple-items="{{1.5}}" snap-to-edge="{{showedge}}" previous-margin="210rpx" current="{{currentId}}">
+      <view wx:for="{{spList}}" wx:key="card">
+        <swiper-item >
+          <view wx:if="{{item.spId=='sp_amount'}}" class="redbag">
+            <text class="rednum">￥<text class="rednumbig">{{(item.spCount/100)}}</text></text>
+            <view class="redbtn" bind:tap="click_redbag"></view>
+          </view>
+          <view wx:else>
+            <image class="card {{item.spCount==0 ?'doGray':''}}" data-item="{{item}}" src="{{CARD_ID[item.spId]}}"></image>
+            <view class="dabg"></view>
+            <text class="dabglab">{{item.spCount>99?'99+':item.spCount}}张</text>
+            <button wx:if="{{item.spCount==0}}" class="qiuzengka" bind:tap="createWantLink" open-type="share" data-card="{{item}}"></button>
+            <view wx:if="{{item.spCount==0 && (systemTime >= actEndTime) }}" class="qiuzengka2" bind:tap="checkActivityTime"></view>
+            <view wx:if="{{item.spCount==0 && !!item.isNotLogin }}" class="qiuzengka2" bind:tap="doLogin"></view>
+            <view wx:if="{{item.spCount>1 && (systemTime < actEndTime)}}">
+              <view wx:if="{{exchange}}" class="quduihuan" bind:tap="click_duihuan" open-type="share"></view>
+              <view wx:if="{{exchange}}" class="songhaoyou" bind:tap="beggerYou" data-card="{{item}}" open-type="share"></view>
+              <view wx:else class="songhaoyou2" bind:tap="beggerYou" data-card="{{item}}"></view>
+            </view>
+            <view wx:if="{{item.spCount>1 && (systemTime >= actEndTime)}}">
+              <view wx:if="{{exchange}}" class="quduihuan" bind:tap="checkActivityTime"></view>
+              <view wx:if="{{exchange}}" class="songhaoyou" bind:tap="checkActivityTime" data-card="{{item}}"></view>
+              <view wx:else class="songhaoyou2" bind:tap="checkActivityTime" data-card="{{item}}"></view>
+            </view>
+
+          </view>
+
+        </swiper-item>
+      </view>
+    </swiper>
+    <image wx:if="{{headerBannerConfigs.length==1}}" class="banner" bind:tap="bannerJump" data-item="{{headerBannerConfigs[0]}}" src="{{headerBannerConfigs[0].img}}"></image>
+    <text wx:if="{{showGuafenLab}}" class="guafenlab">本月已获得瓜分资格，快去看看吧</text>
+    <text wx:else class="guafenlab">集齐巧卡得红包和本月瓜分资格，快去集巧卡吧～</text>
+    <view class="chosecard">
+      <view wx:for="{{littleCardList}}" wx:key="carditem" class="inlinebox" data-index="{{index}}" bind:tap="click_card">
+        <view wx:if="{{item.spId=='sp_total_card'}}" class="hechengitem">
+          <text class="hechenglab">已完成:{{item.spCount}}套</text>
+        </view>
+        <view wx:else class="carditem {{item.spCount==0 ?'doGray':''}}" style="background: url('{{CARD_ID[item.spId]}}') center center / contain no-repeat;">
+          <text class="carditemlab">{{item.spName}}</text>
+          <view class="quan"></view>
+          <text class="quanlab">{{item.spCount>99?'99+':item.spCount}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="box3">
+    <view class="box3title"></view>
+    <view class="box3banner" bind:tap="click_box3"></view>
+    <view class="box3lab" bind:tap="click_box3"></view>
+  </view>
+  <view class="draw" bind:tap="handleClickDraw"></view>
+  <view wx:if="{{showhechengAni}}" class="hechengAni"></view>
+  <comp-auth showModal="{{showAuth}}" id="auth" full-screen />
+  <rule-modal wx:if="{{showRule}}" bind:closeRule="closeModal" />
+  <take-photo wx:if="{{showTakePhoto}}" bind:closeModal="closeModal" bind:failCode="failCode" bind:setPrizeInfo="setPrizeInfo" catch:setCardInfo="setCardInfo" catch:getHomeInfo="getHomeInfo" />
+  <button id="modal-share" open-type="share"></button>
+</view>

@@ -1,0 +1,18 @@
+page {
+  min-height: 100vh;
+  background: #F4F4F4;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15vh;
+}
+
+.view + .view {
+  margin-top: 2vh;
+}

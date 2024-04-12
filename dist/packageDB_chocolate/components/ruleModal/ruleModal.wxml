@@ -1,0 +1,7 @@
+<view class="rule-con">
+  <view class="rule-bg">
+    <!-- <rich-text class="rule-text" nodes="dhajsdjajds"/> -->
+   
+  </view>
+  <view class="close-btn" bind:tap="closeModal"></view>
+</view>

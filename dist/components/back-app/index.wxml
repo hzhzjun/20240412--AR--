@@ -1,0 +1,6 @@
+<view wx:if="{{ query.back_name && scene === 1069 && showReturnApp }}" class="components-back-app">
+  <comp-button open-type="launchApp" custom-class="custom-button" class="button" style-name="green" bind:launchapp="handleCloseButton">
+    <view class="text">{{ query.back_name }}</view>
+  </comp-button>
+  <view class="close" catch:tap="handleCloseButton">X</view>
+</view>

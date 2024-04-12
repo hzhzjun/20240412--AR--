@@ -1,0 +1,16 @@
+<!--packageDB_chocolate/pages/prizePage/prizePage.wxml-->
+<view class="prizePage" id="container">
+  <view class="prizePage_bg"></view>
+  <view class="back" bind:tap="back"></view>
+  <view class="prizelist" >
+    <view wx:for="{{prizeList}}" class="prizeItem" wx:key="prizeItem">
+      <view class="itembg"></view>
+      <image class="icon" src="{{item.extra.icon}}"></image>
+      <text class="name">{{item.extra.name}}</text>
+      <text class="time">{{item.gmtCreate}}</text>
+      <view wx:if="{{item.extra.refType != 'object'}}" class="btn" data-iteminfo="{{item}}" bind:tap="goLink" data-index="{{index}}"></view>
+      <view wx:if="{{item.extra.refType == 'object'}}" class="btn_obj" data-iteminfo="{{item}}" bind:tap="goLink" data-index="{{index}}"></view>
+    </view>
+    <text wx:if="{{prizeList.length==0}}" class="emptyLab">暂无奖品</text>
+  </view>
+</view>

@@ -1,0 +1,1 @@
+.components-loading{display:flex;flex-direction:row;width:100%;align-items:center;justify-content:center;padding:40rpx 0}.components-loading.components-loading-global{left:0;right:0;top:0;bottom:0;margin:auto;position:fixed;height:100%;z-index:100;padding:0}.components-loading .gif{display:block;width:140rpx;height:140rpx}

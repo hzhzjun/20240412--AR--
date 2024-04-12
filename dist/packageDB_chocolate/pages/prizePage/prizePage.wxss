@@ -1,0 +1,123 @@
+/* packageDB_chocolate/pages/prizePage/prizePage.wxss */
+.prizePage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  
+}
+.prizePage .back {
+    width: 65rpx;
+    height: 65rpx;
+    position: fixed;
+    top: 140rpx;
+    left: 30rpx;
+    background: url("https://yun.duiba.com.cn/db_games/qiaolezi/back2.png") no-repeat;
+    background-position: top left;
+    background-size: 100% 100%;
+  
+}
+
+.prizePage .prizePage_bg {
+  width: 750rpx;
+  height: 1624rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/prizepage/bg.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+
+.prizePage .prizelist {
+  width: 750rpx;
+  /* height: 1624rpx; */
+  left: 0rpx;
+  top: 269rpx;
+  bottom: 20rpx;
+  position: absolute;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.prizePage .prizelist .emptyLab {
+  width: 750rpx;
+  height: 46rpx;
+  left: 0rpx;
+  top: 0rpx;
+  position: absolute;
+  font-size: 40rpx;
+  text-align: center;
+  color: #fff;
+}
+
+.prizePage .prizelist .prizeItem {
+  width: 750rpx;
+  height: 200rpx;
+  left: 0rpx;
+  top: 0rpx;
+  display: block;
+  position: relative;
+}
+
+.prizePage .prizelist .prizeItem .itembg {
+  width: 714rpx;
+  height: 171rpx;
+  left: 17rpx;
+  top: 0rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/prizepage/itembg.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+
+.prizePage .prizelist .prizeItem .icon {
+  width: 118rpx;
+  height: 118rpx;
+  left: 42rpx;
+  top: 27rpx;
+  position: absolute;
+  border-radius: 20rpx;
+}
+
+.prizePage .prizelist .prizeItem .name {
+  width: 320rpx;
+  height: 46rpx;
+  left: 200rpx;
+  top: 49rpx;
+  position: absolute;
+  font-size: 28rpx;
+  color: #d1424c;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.prizePage .prizelist .prizeItem .time {
+  width: 320rpx;
+  height: 46rpx;
+  left: 200rpx;
+  top: 93rpx;
+  position: absolute;
+  font-size: 24rpx;
+  color: #d1424c;
+}
+
+.prizePage .prizelist .prizeItem .btn {
+  width: 163rpx;
+  height: 63rpx;
+  left: 526rpx;
+  top: 54rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/prizepage/gobtn.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.prizePage .prizelist .prizeItem .btn_obj {
+  width: 163rpx;
+  height: 63rpx;
+  left: 526rpx;
+  top: 54rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/aurora/assets/37fdcf5dce8d8dc6c6474942de6c143eba07ca84.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}

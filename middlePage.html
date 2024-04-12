@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <script crossorigin="anonymous" src="https://yun.duiba.com.cn/js-libs/vConsole/3.3.4/vconsole.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <title>巧乐兹</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .redirect_div {
+            width: 100%;
+            height: 100%;
+            overflow: scroll;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 1;
+        }
+
+        .redirectimg {
+            width: 100%;
+            position: absolute;
+        }
+
+        .tipbtn {
+            width: 316px;
+            height: 50px;
+            position: fixed;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: url(https://yun.duiba.com.cn/db_games/qiaolezi/gonglvebtn.png) no-repeat top left / 100% 100%;
+        }
+    </style>
+
+<body>
+    <div id="redirect_div" class="redirect_div">
+        <img class="redirectimg" src="https://yun.duiba.com.cn/db_games/qiaolezi/gonglve2.png" />
+        <div class="tipbtn"></div>
+    </div>
+
+
+
+</body>
+<script>
+    //var vConsole = new VConsole();
+
+    //获取链接的特定参数，比如chanID
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+</script>
+
+</html>

@@ -1,0 +1,8 @@
+var REGEXP = getRegExp('^-?\d+(\.\d+)?$')
+
+function useUnit(value, unit) {
+  if (value == null) return undefined
+  return REGEXP.test('' + value) ? value + (unit || 'rpx') : value
+}
+
+module.exports = useUnit

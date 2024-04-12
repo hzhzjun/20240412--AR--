@@ -1,0 +1,491 @@
+page {
+  min-height: 100vh;
+  background: #F4F4F4;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15vh;
+  overflow: hidden;
+}
+
+.view+.view {
+  margin-top: 2vh;
+}
+
+.homePage {
+  width: 100%;
+  height: 2286rpx;
+  position: absolute;
+  overflow-y: scroll;
+}
+
+.homePage .bg {
+  width: 750rpx;
+  height: 2286rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/indexbg2.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+
+.homePage .title {
+  width: 694rpx;
+  height: 490rpx;
+  position: absolute;
+  left: 28rpx;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/title2.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+
+.modal-share {
+  opacity: 0;
+}
+
+.homePage .titleimg {
+  width: 487rpx;
+  height: 245rpx;
+  left: 123rpx;
+  top: 299rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/titleimg.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+
+.homePage .rule {
+  width: 56rpx;
+  height: 55rpx;
+  left: 675rpx;
+  top: 162rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/rule.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+
+.homePage .prize {
+  width: 55rpx;
+  height: 55rpx;
+  left: 676rpx;
+  top: 236rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/prize.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .draw {
+  width: 158rpx;
+  height: 158rpx;
+  right: 10rpx;
+  top: 570rpx;
+  position: fixed;
+  background: url("https://yun.duiba.com.cn/aurora/assets/6f4f8c1c30696418f578b041ba0083f85bae432c.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+  z-index: 0;
+}
+.homePage .actTime{
+  width: 750rpx;
+  height: 50rpx;
+  left: 0rpx;
+  top: 555rpx;
+  margin-right: 15rpx;
+  position: absolute;
+  font-size: 24rpx;
+  text-align: center;
+  color: #77372e;
+  pointer-events: none;
+}
+
+.homePage .box1 {
+  width: 750rpx;
+  height: 333rpx;
+  left: 0rpx;
+  top: 592rpx;
+  position: absolute;
+}
+
+.homePage .box1 .box1title {
+  width: 438rpx;
+  height: 101rpx;
+  left: 157rpx;
+  top: 0rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/box1title2.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+
+.homePage .box1 .box1bg {
+  width: 684rpx;
+  height: 228rpx;
+  left: 30rpx;
+  top: 116rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/box1bg.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+
+.homePage .box1 .camera {
+  width: 166rpx;
+  height: 46rpx;
+  left: 182rpx;
+  top: 138rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/camera.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+
+.homePage .box1 .doinput {
+  width: 239rpx;
+  height: 26rpx;
+  left: 447rpx;
+  top: 149rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/doinput.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .box1 .inputArea {
+  width: 662rpx;
+  height: 50rpx;
+  left: 83rpx;
+  top: 220rpx;
+  position: absolute;
+}
+.homePage .box1 .inputArea .inputbox{
+  width: 662rpx;
+  height: 50rpx;
+  left: 0rpx;
+  top: 0rpx;
+  position: absolute;
+  color: #ffffff;
+}
+
+.homePage .box1 .inputArea .inputItem {
+  width: 56rpx;
+  height: 50rpx;
+  left: 0rpx;
+  top: 0rpx;
+  margin-right: 15rpx;
+  position: relative;
+  display: inline-block;
+  font-size: 42rpx;
+  text-align: center;
+  color: #fe3d5c;
+  font-weight: bold;
+  pointer-events: none;
+}
+.homePage .box2 {
+  width: 750rpx;
+  height: 246rpx;
+  left: 0rpx;
+  top: 1661rpx;
+  position: absolute;
+}
+.homePage .box2 .box2title{
+  width: 440rpx;
+  height: 99rpx;
+  left: 155rpx;
+  top: 0rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/box2title2.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .box2 .box2banner{
+  width: 681rpx;
+  height: 170rpx;
+  left: 35rpx;
+  top: 110rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/box2banner.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .box2 .box2lab{
+  width: 373rpx;
+  height: 73rpx;
+  left: 190rpx;
+  top: 130rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/box2lab.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .box2 .box2Info{
+  width: 681rpx;
+  height: 26rpx;
+  left: 35rpx;
+  top: 214rpx;
+  position: absolute;
+  text-align: center;
+  font-size: 24rpx;
+  color: #77372e;
+}
+.homePage .box2 .changColor{
+  color: #f52a3a;
+}
+.homePage .cardList {
+  width: 750rpx;
+  height: 710rpx;
+  left: 0rpx;
+  top: 961rpx;
+  position: absolute;
+}
+
+.homePage .cardList .card{
+  width: 305rpx;
+  height: 408rpx;
+  left: 21rpx;
+  top: 12rpx;
+  position: absolute;
+}
+.homePage .cardList .doGray {
+  filter: opacity(50%)
+}
+.homePage .cardList .dabg{
+  width: 78rpx;
+  height: 30rpx;
+  left: 241rpx;
+  top: 22rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/dabg.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .cardList .dabglab{
+  width: 78rpx;
+  height: 30rpx;
+  left: 231rpx;
+  top: 20rpx;
+  position: absolute;
+  text-align: center;
+  font-size: 24rpx;
+  color: #a4202c;
+  font-weight: bold;
+}
+.homePage .cardList .qiuzengka{
+  width: 105rpx;
+  height: 40rpx;
+  left: 120rpx;
+  top: 396rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/qiuzengka.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .cardList .qiuzengka2{
+  width: 105rpx;
+  height: 40rpx;
+  left: 120rpx;
+  top: 396rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/qiuzengka.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .cardList .quduihuan{
+  width: 105rpx;
+  height: 40rpx;
+  left: 50rpx;
+  top: 396rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/quduihuan.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .cardList .songhaoyou{
+  width: 105rpx;
+  height: 40rpx;
+  left: 190rpx;
+  top: 396rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/songhaoyou.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .cardList .songhaoyou2{
+  width: 105rpx;
+  height: 40rpx;
+  left: 120rpx;
+  top: 396rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/songhaoyou.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .cardList .redbag {
+  width: 347rpx;
+  height: 433rpx;
+  left: 0rpx;
+  top: 0rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/redbag.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .cardList .redbag .redbtn{
+  width: 363rpx;
+  height: 81rpx;
+  left: -33rpx;
+  top: 286rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/redbtn.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .cardList .rednum {
+  width: 347rpx;
+  height: 26rpx;
+  left: 0rpx;
+  top: 45rpx;
+  position: absolute;
+  text-align: center;
+  font-size: 44rpx;
+  color: #fe405d;
+}
+.homePage .cardList .rednum .rednumbig{
+  font-size: 106rpx;
+  font-weight: bold;
+}
+.homePage .cardList .guafenlab{
+  width: 750rpx;
+  height: 26rpx;
+  left: 0rpx;
+  top: 455rpx;
+  position: absolute;
+  text-align: center;
+  font-size: 22rpx;
+  color: #d1424c;
+}
+.homePage .cardList .chosecard {
+  width: 750rpx;
+  height: 170rpx;
+  left: 0rpx;
+  top: 480rpx;
+  position: absolute;
+}
+.homePage .cardList .hechengitem {
+  width: 144rpx;
+  height: 144rpx;
+  left: 0rpx;
+  top: 14rpx;
+  margin-left: 10rpx;
+  position: relative;
+  display: inline-block;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/hechengqiao.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .cardList .hechengitem .hechenglab{
+  width: 144rpx;
+  height: 20rpx;
+  left: 0rpx;
+  top: 150rpx;
+  position: absolute;
+  font-size: 22rpx;
+  color: #d1424c;
+  text-align: center;
+}
+.homePage .cardList .inlinebox {
+  position: relative;
+  display: inline-block;
+  margin-right: 25rpx;
+}
+.homePage .cardList .carditem {
+  width: 88rpx;
+  height: 116rpx;
+  left: 0rpx;
+  top: 0rpx;
+  position: relative;
+  display: inline-block;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.homePage .cardList .carditem .carditemlab{
+  width: 88rpx;
+  height: 20rpx;
+  left: 0rpx;
+  top: 130rpx;
+  position: absolute;
+  font-size: 22rpx;
+  color: #d1424c;
+  text-align: center;
+}
+.homePage .cardList .carditem .quan{
+  width: 28rpx;
+  height: 28rpx;
+  left: 72rpx;
+  top: -14rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/quan.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .cardList .carditem .quanlab{
+  width: 28rpx;
+  height: 20rpx;
+  left: 72rpx;
+  top: -16rpx;
+  position: absolute;
+  font-size: 22rpx;
+  color: #ffffff;
+  text-align: center;
+}
+.homePage .box3 {
+  width: 750rpx;
+  height: 258rpx;
+  left: 0rpx;
+  top: 1958rpx;
+  position: absolute;
+}
+.homePage .box3 .box3title{
+  width: 605rpx;
+  height: 73rpx;
+  left: 73rpx;
+  top: 0rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/box3title.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .box3 .box3banner{
+  width: 681rpx;
+  height: 170rpx;
+  left: 35rpx;
+  top: 76rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/box3banner.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.homePage .box3 .box3lab{
+  width: 383rpx;
+  height: 76rpx;
+  left: 185rpx;
+  top: 128rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/box3lab2.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.hechengAni {
+  width: 750rpx;
+  height: 1225rpx;
+  left: 0rpx;
+  top: 0rpx;
+  position: fixed;
+  background: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/hechengAni2.png") no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+}

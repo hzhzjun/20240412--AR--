@@ -1,0 +1,5 @@
+<view class="view">以下是店铺装修开发组件</view>
+
+<comp-template-demo data="{{ data }}" full-width="{{ 750 }}" />
+
+<view class="view" bind:tap="handleTap">点击进入子包demo</view>

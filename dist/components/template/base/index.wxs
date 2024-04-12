@@ -1,0 +1,64 @@
+var useUnit = require('../../../wxs/unit.wxs')
+var useStyle = require('../../../wxs/style.wxs')
+
+/** 外层样式 */
+function getStyle(data, zIndex) {
+  return useStyle({
+    background: data.background,
+    zIndex: zIndex || 1
+  })
+}
+
+/** 边距样式 */
+function getWrapStyle(data) {
+  return useStyle({
+    marginLeft: useUnit(data.marginLeft),
+    marginRight: useUnit(data.marginRight),
+    marginTop: useUnit(data.marginTop),
+    marginBottom: useUnit(data.marginBottom)
+  })
+}
+
+/** 填充样式 */
+function getContentStyle(data) {
+  if (!data.borderRadius) data.borderRadius = { lt: 0, rt: 0, lb: 0, rb: 0 }
+  return useStyle({
+    paddingLeft: useUnit(data.paddingLeft),
+    paddingRight: useUnit(data.paddingRight),
+    paddingTop: useUnit(data.paddingTop),
+    paddingBottom: useUnit(data.paddingBottom),
+    borderTopLeftRadius: useUnit(data.borderRadius.lt),
+    borderTopRightRadius: useUnit(data.borderRadius.rt),
+    borderBottomLeftRadius: useUnit(data.borderRadius.lb),
+    borderBottomRightRadius: useUnit(data.borderRadius.rb),
+    position: 'relative',
+    overflow: 'visible',
+    backgroundColor: data.backgroundColor,
+    backgroundImage: data.backgroundImage ? 'url(' + data.backgroundImage + ')' : '',
+    borderRepeat: 'no-repeat',
+    backgroundPosition: 'center center',
+    backgroundSize: 'cover',
+    border: useUnit(data.borderWidth || 0 * 2) + ' ' + data.borderStyle + ' ' + data.borderColor,
+    boxSizing: 'border-box',
+    boxShadow:
+      useUnit(data.boxShadowX) +
+      ' ' +
+      useUnit(data.boxShadowY) +
+      ' ' +
+      useUnit(data.boxShadowBlur) +
+      ' ' +
+      useUnit(data.boxShadowWidth) +
+      ' ' +
+      useUnit(data.boxShadowColor) +
+      ' ' +
+      useUnit(data.boxShadowInset),
+    backdropFilter: useUnit(data.backdropFilter, 'px'),
+    webkitBackdropFilter: useUnit(data.backdropFilter, 'px')
+  })
+}
+
+module.exports = {
+  getStyle: getStyle,
+  getWrapStyle: getWrapStyle,
+  getContentStyle: getContentStyle
+}

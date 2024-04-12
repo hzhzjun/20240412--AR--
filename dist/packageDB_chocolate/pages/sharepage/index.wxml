@@ -1,0 +1,8 @@
+<view class="sharePage">
+  <text class="bg"></text>
+  <image class="card_img" src="{{cardImg}}"></image>
+  <text wx:if="{{isWant}}" class="zengsong_text"></text>
+  <text wx:if="{{isWant}}"  class="zengsong_btn" bind:tap="gotoAct"></text>
+  <text wx:if="{{isSend}}" class="lingqu_text"></text>
+  <text wx:if="{{isSend}}" class="lingqu_btn" bind:tap="gotoAct"></text>
+</view>

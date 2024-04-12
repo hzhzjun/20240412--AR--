@@ -1,0 +1,1 @@
+<wxs src="../../wxs/unit.wxs" module="useUnit"/><icon wx:if="{{ checked }}" type="success" size="{{ useUnit(size) }}" color="{{ disabled ? disabledColor : activeColor }}" class="checkbox"/><icon wx:else type="circle" size="{{ useUnit(size) }}" color="{{ disabled ? disabledColor : color }}" class="checkbox"/>

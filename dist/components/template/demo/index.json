@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "comp-template-base": "/components/template/base/index"
+  }
+}

@@ -1,0 +1,4 @@
+<view class="components-fail">
+  <image mode="widthFix" src="https://yshop-cos.yili.com/assets/mini/components/fail/fail.png" class="fail-img" /><text class="text">{{ content }}</text>
+  <comp-button custom-class="button" hollowstyle-name="default" bind:tap="reLoad">{{ buttonContent }}</comp-button>
+</view>

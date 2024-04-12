@@ -1,0 +1,79 @@
+/* packageDB_chocolate/pages/loadPage/loadPage.wxss */
+.loadbox {
+    width: 750rpx;
+    height: 1624rpx;
+    left: 0rpx;
+    top: 0rpx;
+    position: absolute;
+    overflow-y: hidden;
+}
+.loadbox .loadbg {
+        width: 750rpx;
+        height: 1624rpx;
+        position: absolute;
+        background: url("https://yun.duiba.com.cn/db_games/qiaolezi/loadpage/loadbg.png") no-repeat;
+        background-position: top left;
+        background-size: 100% 100%;
+}
+.loadbox .laodbarbox {
+    width: 618rpx;
+    height: 68rpx;
+    position: absolute;
+    left: 92rpx;
+    top: 882rpx;
+    overflow: hidden;
+    border-radius: 45rpx;
+}
+.loadbox .laodbarbox .loadbaron{
+    width: 592rpx;
+    height: 55rpx;
+    position: absolute;
+    left: -592rpx;
+    top: 0rpx;
+    background: url("https://yun.duiba.com.cn/db_games/qiaolezi/loadpage/baron.png") no-repeat;
+    background-position: top left;
+    background-size: 100% 100%;
+    animation: loadbarAni 3s linear 1 forwards;
+}
+.loadbox .loadbardown {
+    width: 618rpx;
+    height: 67rpx;
+    position: absolute;
+    left: 78rpx;
+    top: 883rpx;
+    background: url("https://yun.duiba.com.cn/db_games/qiaolezi/loadpage/bardown.png") no-repeat;
+    background-position: top left;
+    background-size: 100% 100%;
+}
+.loadbox .loadtip {
+    width: 185rpx;
+    height: 31rpx;
+    left: 315rpx;
+    top: 993rpx;
+    position: absolute;
+    background: url("https://yun.duiba.com.cn/db_games/qiaolezi/loadpage/loadtip.png") no-repeat;
+    background-position: top left;
+    background-size: 100% 100%;
+    animation: loadtipAni 1s linear infinite;
+}
+@keyframes loadtipAni {
+  0% {
+    transform: translateY(0rpx);
+  }
+  50% {
+    transform: translateY(15rpx);
+  }
+  
+  100% {
+    transform: translateY(0rpx);
+  }
+}
+@keyframes loadbarAni {
+  0% {
+    transform: translateX(0rpx);
+  }
+  
+  100% {
+    transform: translateX(592rpx);
+  }
+}

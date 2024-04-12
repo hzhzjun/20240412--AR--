@@ -1,0 +1,17 @@
+var object = require('./object.wxs')
+
+function useStyle(obj) {
+  return object
+    .keys(obj)
+    .filter(function (key) {
+      return typeof obj[key] === 'string' || typeof obj[key] === 'number'
+    })
+    .map(function (key) {
+      var keys = key.replace(getRegExp('([A-Z])', 'g'), '-$1').toLowerCase()
+      if (keys.indexOf('webkit') === 0) keys = '-' + keys
+      return [keys, [obj[key]]].join(':')
+    })
+    .join(';')
+}
+
+module.exports = useStyle

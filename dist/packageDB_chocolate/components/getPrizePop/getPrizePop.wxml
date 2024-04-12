@@ -1,0 +1,10 @@
+<view class="getprizepop">
+  <text class="bg"></text>
+  <text class="prizename2">获得{{moneyPrizeInfo.optionName}}</text>
+  <text class="close_btn" catch:tap="closeModal"></text>
+  <text class="prizename">{{moneyPrizeInfo.optionName}}</text>
+  <view class="prizebg">
+    <image class="image2" src="{{moneyPrizeInfo.optionImg}}"/>
+  </view>
+  <text class="ok_btn" catch:tap="closeModal"></text>
+</view>

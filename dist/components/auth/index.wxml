@@ -1,0 +1,15 @@
+<comp-modal wx:if="{{ showModal }}" full-screen="{{ FullScreen }}" can-close="{{ false }}" class="auth">
+  <view wx:if="{{ modalList.showMobilePhone }}" class="login">
+    <comp-image src="{{ logo }}" class="logo" />
+    <view class="title">{{ text1 }}</view>
+    <view class="text">{{ text2 }}</view>
+    <view class="agree" bind:tap="handleAgree">
+      <comp-checkbox checked="{{ agree }}" size="26" class="checkbox" />{{ text3 }}
+      <view class="blue" catch:tap="handleAgreement">{{ text4 }}</view>
+    </view>
+    <view class="button-group">
+      <comp-button hollow custom-class="button" class="button cancel" style-name="gray" bind:tap="handleCancel">暂不授权</comp-button>
+      <comp-button hollow open-type="{{ agree ? 'getPhoneNumber' : '' }}" custom-class="button" class="button" style-name="default" bind:getphonenumber="handleGetMobilePhone" bind:tap="handleTap">确认授权</comp-button>
+    </view>
+  </view>
+</comp-modal>

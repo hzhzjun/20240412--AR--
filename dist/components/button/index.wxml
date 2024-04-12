@@ -1,0 +1,3 @@
+<button open-type="{{ openType }}" form-type="{{ formType }}" hover-stop-propagation hover-start-time="0" class="{{ className }} custom-class" style="{{ customStyle }} {{ showBorder ? '' : '; border: 0 !important' }}" bind:getuserinfo="getuserinfo" bind:getphonenumber="getphonenumber" bind:tap="handleTap">
+  <slot />
+</button>

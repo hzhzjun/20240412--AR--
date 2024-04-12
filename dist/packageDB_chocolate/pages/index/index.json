@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "活动标题",
+  "navigationBarTextStyle": "black",
+  "navigationStyle": "default",
+  "usingComponents": {
+    "comp-auth": "/components/auth/index",
+    "take-photo": "../../components/takePhoto/takePhoto",
+    "rule-modal": "../../components/ruleModal/ruleModal"
+  }
+}

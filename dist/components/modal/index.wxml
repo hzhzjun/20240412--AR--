@@ -1,0 +1,4 @@
+<view class="components-modal" style="{{ style }}" catch:touchmove="handleTouchmove">
+  <view class="modal-close-box" catch:touchmove="handleTouchmove" bind:tap="handleCloseModal" />
+  <slot />
+</view>

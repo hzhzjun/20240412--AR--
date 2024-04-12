@@ -1,0 +1,8 @@
+<wxs src="./index.wxs" module="computed" />
+<view wx:if="{{ data.type }}" class="template-base" style="{{ computed.getStyle(data, zIndex) }}">
+  <view style="{{ computed.getWrapStyle(data) }}">
+    <view style="{{ computed.getContentStyle(data) }}">
+      <slot />
+    </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<!--packageDB_chocolate/pages/loadPage/loadPage.wxml-->
+<!-- <text>packageDB_chocolate/pages/loadPage/loadPage.wxml</text> -->
+<view class="loadbox">
+    <view class="loadbg"></view>
+    <view class="loadbardown"></view>
+    <view class="laodbarbox">
+        <view class="loadbaron"></view>
+    </view>
+    <view class="loadtip"></view>
+</view>

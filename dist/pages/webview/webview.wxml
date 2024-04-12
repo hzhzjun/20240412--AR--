@@ -1,0 +1,1 @@
+<web-view wx:if="{{ !loading && !fail && !notfound && src }}" src="{{ src }}" bind:message="handleMessage" />

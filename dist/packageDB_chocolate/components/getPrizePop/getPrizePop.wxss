@@ -1,0 +1,69 @@
+.getprizepop {
+  width: 750rpx;
+  height: 1624rpx;
+  left: 0rpx;
+  top: 0rpx;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.getprizepop .bg {
+  width: 750rpx;
+  height: 1091rpx;
+  left: 0rpx;
+  top: 199rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/polaris/Bg.5f2cd54c38517f7cab268d87a3b0533fc13481bf.png") no-repeat top left / 100% 100%;
+}
+.getprizepop .prizename2 {
+  width: 465rpx;
+  text-align: center;
+  left: 147rpx;
+  top: 516rpx;
+  position: absolute;
+  font-size: 32rpx;
+  line-height: 32rpx;
+  color: #d1424c;
+}
+.getprizepop .close_btn {
+  width: 67rpx;
+  height: 67rpx;
+  left: 618rpx;
+  top: 412rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/polaris/close_btn.784295de730fa1ad8e2bba837b5b05bda3f2f941.png") no-repeat top left / 100% 100%;
+}
+.getprizepop .prizename {
+  width: 405rpx;
+  text-align: center;
+  left: 170rpx;
+  top: 866rpx;
+  position: absolute;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #d1424c;
+}
+.getprizepop .prizebg {
+  width: 243rpx;
+  height: 244rpx;
+  left: 254rpx;
+  top: 599rpx;
+  display: inline-block;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/polaris/prizeBg.12c6a86206b56e79218f76796be5f717f540feb3.png") no-repeat top left / 100% 100%;
+}
+.getprizepop .prizebg .image2 {
+  max-width: 240rpx;
+  max-height: 240rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.getprizepop .ok_btn {
+  width: 311rpx;
+  height: 85rpx;
+  left: 220rpx;
+  top: 923rpx;
+  position: absolute;
+  background: url("https://yun.duiba.com.cn/polaris/ok_btn.75c50f8c634c72c211df2d757749fdb4f0490537.png") no-repeat top left / 100% 100%;
+}

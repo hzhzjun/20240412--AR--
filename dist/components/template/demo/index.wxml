@@ -1,0 +1,6 @@
+<comp-template-base data="{{ data }}">
+  <view class="style">所有的自定义数据在data.customData中</view>
+  <view class="style">其它数据业务逻辑自行完善</view>
+  <view class="style">{{ data.customData.text }}</view>
+  <view class="style">背景颜色和填充是组件的基础配置</view>
+</comp-template-base>

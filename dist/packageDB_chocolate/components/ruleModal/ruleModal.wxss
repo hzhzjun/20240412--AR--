@@ -1,0 +1,47 @@
+.rule-con {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: scroll;
+
+}
+
+.rule-con .rule-bg {
+  width: 750rpx;
+  height: 13280rpx;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+  background-image: url("https://yun.duiba.com.cn/db_games/qiaolezi/index/rule4.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+
+.rule-con .rule-bg .rule-text {
+  width: 513rpx;
+  height: 761rpx;
+  position: absolute;
+  top: 182rpx;
+  left: 64rpx;
+  color: #d1424c;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-align: justify;
+  word-break: break-all;
+  line-break: anywhere;
+
+}
+
+.rule-con .close-btn {
+  width: 70rpx;
+  height: 70rpx;
+  position: fixed;
+  left: 25rpx;
+  top: 90rpx;
+  background-image: url("https://yun.duiba.com.cn/db_games/qiaolezi/back2.png");
+  background-size: 67rpx 67rpx;
+  background-repeat: no-repeat;
+}

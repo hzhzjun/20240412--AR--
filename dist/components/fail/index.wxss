@@ -1,0 +1,1 @@
+.components-fail{left:0;right:0;top:0;bottom:0;margin:auto;position:fixed;z-index:200;text-align:center}.components-fail .fail-img{position:relative;display:block;left:-20rpx;width:54%;margin:20% auto 80rpx}.components-fail .text{display:block;margin:40rpx 0;color:#777;font-size:32rpx}.components-fail .button{display:block;width:580rpx;margin:auto}

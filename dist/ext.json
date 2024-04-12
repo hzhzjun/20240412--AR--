@@ -1,0 +1,85 @@
+{
+  "extEnable": true,
+  "extAppid": "wxa4650aefbad92771",
+  "directCommit": false,
+  "window": {
+    "navigationBarTitleText": "智达2号",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "dark",
+    "backgroundColorTop": "#ffffff",
+    "backgroundColorBottom": "#ffffff",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#adadad",
+    "selectedColor": "#00B58F",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      { "pagePath": "pages/index/index", "text": "首页", "iconPath": "images/index.png", "selectedIconPath": "images/index_selected.png" },
+      { "pagePath": "pages/my/my", "text": "我的", "iconPath": "images/my.png", "selectedIconPath": "images/my_selected.png" }
+    ]
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "networkTimeout": { "request": 60000, "connectSocket": 60000, "uploadFile": 60000, "downloadFile": 60000, "useDownloadFile": 0 },
+  "requiredPrivateInfos": ["chooseAddress", "chooseLocation", "getLocation"],
+  "permission": {
+    "scope.userLocation": { "desc": "为了带给您更好的体验我们需要获取您的位置信息" },
+    "scope.userFuzzyLocation": { "desc": "" },
+    "scope.userLocationBackground": { "desc": "" }
+  },
+  "ext": {
+    "appid": "wxa4650aefbad92771",
+    "appName": "智达2号",
+    "shareTitle": "智达2号，欢迎你",
+    "imageUrl": "https://test-wx-pubcos.yili.com/uat-msmarket/efb4107bc2ed4161ba4d8ecce420f8f4.png",
+    "homePath": "pages/index/index",
+    "returnType": 1,
+    "enableOrderService": true,
+    "sensorsPush": true,
+    "sensorPushName": "智达2号",
+    "showReturnApp": true,
+    "isCustomTabbar": true,
+    "udeskAppNo": "1103",
+    "contact": "contact",
+    "enableShare": true,
+    "sensorsPushUrl": "https://digitaldmo.yili.com/sa?project=sensorstest",
+    "amapKey": "488ebcdfbb7bc9f42d8bf69b467d2fb7",
+    "udeskUrl": "https://huolishangcheng.cc.digitalyili.com/im_client/?web_plugin_id=51&session_key=51",
+    "udeskKey": "dff9216f0928137f7ddba2cee693870d",
+    "version": "",
+    "navigationStyle": "custom",
+    "buttonColor": "#333",
+    "titleColor": "#000",
+    "background": "rgba(255, 255, 255, 1)",
+    "customTemplate": [],
+    "tabBar": [
+      { "name": "首页", "pagePath": "pages/index/index" },
+      { "name": "我的", "pagePath": "pages/my/my" }
+    ],
+    "authSettings": {
+      "text1": "为了给您带来更好的体验，该小程序需要获取以下授权：",
+      "text2": "·获得您的联系方式",
+      "text3": "授权代表您已同意伊利",
+      "text4": "用户协议&隐私协议",
+      "text5": "为了您更便捷的使用体验，我们需要获取您的联系方式",
+      "logo": "https://test-wx-pubcos.yili.com/uat-msmarket/6687cc7310db4ed1bdb5caa2d4e95e49.png"
+    },
+    "cardBindBackground": ["https://test-wx-public-web-1251376346.file.myqcloud.com/saas/test/db8d4b44134f448c860501533924fc13.jpg"],
+    "enterpriseMicroCode": ["https://test-wx-public-web-1251376346.file.myqcloud.com/saas/test/a9a3d2a97a9f4e5fabfb8550bfb8f8ca.png"],
+    "tenantId": "1658354092759584769",
+    "privacy": {
+      "title": "$$appName隐私保护指引",
+      "content": "在使用「$$appName」服务之前，请仔细阅读$/《$$appName隐私保护指引》/$。如你同意《$$appName隐私保护指引》，请点击\"同意\"开始使用「$$appName」。",
+      "agree": "同意并继续",
+      "disagree": "暂时拒绝",
+      "path": ""
+    },
+    "env": "dev"
+  },
+  "entryPagePath": "pages/index/index"
+}

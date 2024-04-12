@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/webview/webview",
+    "pages/jump/jump"
+  ],
+  "subpackages": [
+    {
+      "root": "packageDB_chocolate",
+      "name": "packageDB_chocolate",
+      "pages": [
+        "pages/loadPage/loadPage",
+        "pages/index/index",
+        "pages/carveup/index",
+        "pages/sharepage/index",
+        "pages/prizePage/prizePage",
+        "pages/stragePage/stragePage",
+        "pages/exchangePage/exchangePage",
+        "pages/turntablePage/turntablePage",
+        "pages/webview/webview"
+      ]
+    },
+    {
+      "root": "packageDemo",
+      "name": "packageDemo",
+      "pages": [
+        "pages/index/index"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTitleText": "伊利活力商城",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "dark",
+    "backgroundColorTop": "#ffffff",
+    "backgroundColorBottom": "#ffffff"
+  },
+  "tabBar": {
+    "custom": false,
+    "color": "#adadad",
+    "selectedColor": "#00B58F",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "images/index_selected.png"
+      },
+      {
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "pagePath": "pages/my/my",
+        "selectedIconPath": "images/index_selected.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "comp-auth": "/components/auth/index",
+    "comp-back-app": "/components/back-app/index",
+    "comp-button": "/components/button/index",
+    "comp-modal": "/components/modal/index"
+  },
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "lazyCodeLoading": "requiredComponents"
+}

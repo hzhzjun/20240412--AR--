@@ -1,0 +1,3 @@
+<view class="{{ className }}">
+  <comp-image src="/components/loading/images/loading.gif" class="gif" />
+</view>

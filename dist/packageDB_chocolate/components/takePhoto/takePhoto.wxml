@@ -1,0 +1,10 @@
+<view class="photo-con">
+  <view class="vertify-con">
+    <camera wx:if="{{showCamera}}" class="camera-con" frame-size="small" resolution="low" device-position="back" flash="off" style="width: 687rpx; height: 158rpx;"></camera>
+    <view wx:if="{{!showCamera}}" class="camera-con"></view>
+    <image wx:if="{{cameraImg}}" src="{{cameraImg}}" mode="aspectFit" class="camera-img" />
+    <view class="tip"></view>
+    <view class="vertify-btn" bind:tap="takePhoto"></view>
+    <view class="cancel-btn" bind:tap="closeModal"></view>
+  </view>
+</view>

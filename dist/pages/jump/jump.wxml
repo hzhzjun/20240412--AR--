@@ -1,0 +1,7 @@
+<comp-titlebar title="{{ appName }}" show-home-button="{{ false }}" />
+<comp-loading wx:if="{{ loading }}" global />
+<comp-fail wx:elif="{{ fail }}" content="{{ failContent }}" button-content="{{ failButtonContent }}" router-back="{{ failRouterBack }}" bind:reload="reLoad" />
+<comp-notfound wx:elif="{{ notfound }}" title="{{ notFoundTitle }}" />
+<comp-notfound-new wx:elif="{{ notFoundNew }}" />
+<comp-auth id="auth" full-screen="{{ authFullScreen }}" />
+<comp-back-app />
