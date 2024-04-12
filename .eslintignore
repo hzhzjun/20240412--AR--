@@ -1,0 +1,2 @@
+# 忽略eslint校验路径，例如:
+# src/libs/@spark
